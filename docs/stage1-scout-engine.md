@@ -114,9 +114,10 @@ CandidateSignal:
 ```
 
 Adapters (in priority order):
-1. **api_mcp** *(chosen target)* — query VidIQ/TubeLab/TubeGen via API or an MCP
-   server. **Requires credentials not yet present in this repo.** Put keys in
-   env / settings and register the MCP server; until then this adapter is
+1. **api_mcp** *(chosen target — concrete spec in `docs/data-adapter-api.md`)* —
+   primary implementation is the **YouTube Data API v3** (verified age, subs,
+   views, cadence, recent-video views), with optional Social Blade for 30-day
+   sub velocity. Set `YOUTUBE_API_KEY` to activate; until then this adapter is
    inert.
 2. **web_search** — WebSearch/WebFetch over public stat pages + YouTube search.
    Coarser numbers, but runs today with no setup — usable to bootstrap a live
