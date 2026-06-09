@@ -2,3 +2,7 @@
 .env
 .env.local
 .claude/settings.local.json
+
+# Scratch drafts — cells write working files here; final output lands in sessions/<slug>.md
+sessions/script-draft.txt
+sessions/*.draft
