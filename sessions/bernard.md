@@ -139,15 +139,36 @@
 - **Chosen topic:** *Why It Sucks to Be Born a Eunuch in the Forbidden City (Ming Dynasty China)*
 - **Close alternates if operator overrides:** #2 Aztec Captive's Son (max click-appeal, needs midsection work), #3 Janissary Boy (cleanest arc).
 
-## STATE 5 — Style DNA — `pending`
+## STATE 5 — Style DNA — `✓ done`
 *(Strategy Cell)*
 
-- Niche / audience:
-- Hook style:
-- Script flow / rhythm / tone / transitions:
-- Curiosity gaps / emotional triggers / retention / direct address:
-- Words per second:
-- Target word count (±5%):
+- **Niche / audience:** Faceless, stick-figure "dark history edutainment." The lane is grim historical biography delivered as a single second-person life simulation — one terrible role/era per video, birth to death. Audience: 16–34 history/morbid-curiosity viewers (the "horrible-histories-for-adults," r/history, Sam O'Nella / Oversimplified / dark-trivia crowd) who watch long-form (~22 min) for an immersive, emotionally heavy story rather than a fact list. They come for the empathy hit of *being* the person plus the schoolbook-skipped grim detail, and stay for the slow-build dread. Replay/retention demographic skews late-night solo viewing.
+
+- **Hook style:** A three-move open run consistently across the cluster.
+  1. **Monetization pre-roll, deadpan and brief** (T1 Audible link "pinned in the comments"; T2 channel membership "see the link in the description"; trimmed/absent in T3's paste) — delivered flatly, no hype, as a throat-clear.
+  2. **Hard pivot line** — "Now, on to the story." / "Now, onto our story." — a clean tonal door that separates ad from narrative and signals the immersion is starting.
+  3. **2nd-person birth-drop** — "You are born in…" / "You're born a prince to the pharaoh…" / "You were born in 15th century Seville." Place + era are fixed in the first sentence; the viewer is instantly the protagonist in present/past-continuous tense.
+  The first ~30s promises a specific *premise of doom*: it either states the cosmic irony up front (T2: "sounds like winning the cosmic lottery… in reality, you arrive weak, barely breathing, wrapped in linen that already feels like a test run for your funeral") or plants a quiet wrongness to be decoded later (T3: the house "stands alone," "nobody came to congratulate your parents," "but that doesn't concern you yet"). Either way the hook seeds the central question — *why does this life suck, and how bad does it get?* — and a promise that normal-looking detail is hiding horror.
+
+- **Script flow / rhythm / tone / transitions:**
+  - **Spine = chronological age-milestone life arc.** Explicit ages are the skeleton and the transition device: born → 5/6 → 7/8 → 12 → 13/15/16 → 18 → 23/25 → 30/31 → mid-30s/40 → death/obsolescence. Each new age is a hard cut to the next life stage ("By the time you turn seven…", "You've just turned 15…", "Years pass and you turn 31…", "You are 41 now."). Time-jumps are signaled with a stock connective — "Years pass," "A few years pass," "Time moves quietly, measured in lessons and seasons" — then re-anchored on a number.
+  - **Sentence rhythm:** predominantly short declaratives and deliberate fragments for impact, clustered in threes ("Men work, women tend." / "noted, logged, filed away as not dead yet." / "No trials, no explanations." / "Lift. Drop. Shoulder pop. Lift. Drop. Repeat."). Longer descriptive sentences set a scene, then a curt fragment lands the gut-punch. Frequent asyndeton and triads (rule-of-three lists of duties, props, or cruelties).
+  - **Tone:** deadpan, grim, matter-of-fact; atrocity is reported in the flat register of routine ("the way he fixes the fence. The way he passes the salt at dinner, like it is simply the next thing"). Occasional dry, bitter irony ("associated with lepers in the public imagination which is impressive honestly given where you started"). Never melodramatic, never winking at the camera — horror earns its weight by being underplayed.
+  - **Transitions:** age numbers + "years pass"; also thematic pivots that reframe ("From then on, weakness stops being frightening. It becomes meaningful."). Scenes hand off via a realization sentence that closes one stage and opens the next.
+  - Tense: 2nd-person throughout; present-leaning ("You are taught…," "You learn…") even when the frame is past, keeping the sim live.
+
+- **Curiosity gaps / emotional triggers / retention / direct address:**
+  - **Delayed-decode gaps:** plant an unexplained detail early, pay it off later ("Only later, much later, do you understand. This is the day you were sold." / the market stick + house at the end of the street "all make sense" only when the father explains the trade). This is the core retention engine — small mysteries opened then resolved a beat later, chained continuously.
+  - **False-hope → reversal beats:** the script repeatedly dangles rescue/escape then revokes it (T1: emancipation edict "sounds like a miracle" → "new contracts, new words, same hands… Freedom has been postponed forever by better accounting"; T2: "you feel a flicker of something beyond duty. Hope." → "But hope is cruel. Your son emerges small, twisted, and fragile"). The cruelty of the reversal is the emotional payload.
+  - **Horror-reframed-as-normal/cultural:** suffering is laundered through euphemism the institution uses on itself — "they say continuity… stability… the gods demand it" (incest), "this is refinement… discipline creates beauty… tears are proof you are being shaped correctly," "necessary work… someone has to do it." The viewer sees the horror the narrator/protagonist is trained not to.
+  - **"Only later do you understand" / earned realization:** recurring epiphany device that doubles as a thesis statement ("you realize visibility is not ownership of the self. Prestige is simply a higher shelf in the same cage").
+  - **The system / "machine" thesis:** every video lands the same structural argument — the protagonist is a replaceable component in an indifferent institution that sharpens, uses, and discards them. T1: "You are no longer the face of the system. Now you are just one of its gears. And this machine never stops." T2: "the cycle continues without anyone being the wiser." T3: "you understand exactly what your role in this machine is. It never needed you to believe in it. It just needed you to show up." Set this thesis as the spine and seed it from the midpoint.
+  - **Bleak zoom-out close:** final beat pulls back from the body to the impersonal verdict — history/the institution denies the protagonist remembrance or agency ("History will only remember the divine persona of a pharaoh, not the body underneath it"; T3's Death "simply waiting… in your father's house, in your house, and it'll do the same in your son's house"). The ending is hollow, not cathartic; no rescue, no moral uplift.
+  - **Direct address sustains identification:** unbroken 2nd-person "you" makes every milestone happen *to the viewer*; the script forces the viewer to make the doomed choices ("You say yes immediately, proudly"), feel the body fail, and absorb the institution's logic — empathy is the retention mechanism, not just curiosity.
+
+- **Words per second:** Cluster: ~3,117 words / 23:06 (1,386 s) ≈ 2.25 wps (T1); ~3,147 / 22:58 (1,378 s) ≈ 2.28 wps (T2); T3 ~3,227 words, untimed but same ~22–23 min band. **Working delivery rate ≈ 2.25–2.3 words/second** (≈ 135–138 words/minute) — a slow, measured narration pace consistent with the deadpan register.
+
+- **Target word count (±5%):** **3,150 words** — center of the tight 3,117 / 3,147 / 3,227 cluster (mean ≈ 3,164) and right for a ~22–23 min runtime at ~2.25–2.3 wps. **Acceptable band: 2,993 – 3,308 words (±5%).** This is the contract the Script Cell must hit for the Eunuch in the Forbidden City script.
 
 ## STATE 6 — Script — `pending`
 *(Script Cell)*
