@@ -80,12 +80,32 @@
 
 - Banner prompt: Wide YouTube channel banner, flat 2D hand-drawn stick-figure style on an aged parchment / muted desaturated cream background with faint paper texture. A horizontal procession of small black stick figures, each in a different grim historical role, marches left to right across the lower third — a chained laborer hauling a block, a plague doctor with a beak mask, a soldier with a crude spear, a peasant bent under a heavy sack, an executioner with a small axe — all in loose imperfect marker line art, blank round heads, exaggerated weary postures. Sparse minimalist props (a tiny gallows, a small storm cloud, a crooked tombstone) sketched in the same line style. Tone is deadpan dark comedy: history's miseries rendered as simple doodles. Leave clear negative space in the center-safe zone for channel name and avatar overlay. Black line art on parchment only, no rich color, no gradients, no realistic detail, flat and clean.
 
-## STATE 3 — Transcripts — `pending`
+## STATE 3 — Transcripts — `✓ done`
 *(Recon Cell)*
 
-- Transcript 1:
-- Transcript 2:
-- Transcript 3:
+- **Transcript 1 — "Why It Sucks to Be Born a Geisha"** (Edo→Meiji Kyoto)
+  - File: `sessions/transcripts/bernard/transcript-01-geisha.md`
+  - Runtime: 0:00–23:06 (timestamped, 39 continuous beats). Word count ~3,117.
+  - Verdict: **COMPLETE** — full life-arc from birth/childhood to mid-30s–40 "you are just one of its gears." Opens on Audible cold-open, no gaps in timestamps, clean closing reflection. Not a clip.
+
+- **Transcript 2 — "Why It Sucks to Be Born a Pharaoh"** (inbred Egyptian royal)
+  - File: `sessions/transcripts/bernard/transcript-02-pharaoh.md`
+  - Runtime: 0:00–22:58 (timestamped, continuous). Word count ~3,147.
+  - Verdict: **COMPLETE** — full arc from birth ("not dead yet") through coronation, reign, decline, assassination at ~49, and post-mortem "history will only remember the divine persona." Timestamps continuous, channel-membership cold-open present. Not a clip.
+
+- **Transcript 3 — "Why It Sucks to Be Born an Executioner / Torturer"** (15th-c. Seville, Inquisition)
+  - File: `sessions/transcripts/bernard/transcript-03-executioner.md`
+  - Runtime: full video; operator pasted as continuous prose (no timestamps). Word count ~3,227.
+  - Verdict: **COMPLETE** — full hereditary-outcast arc from boyhood (the stick at market) through apprenticeship, inheriting the trade at 15, marriage, and the bleak close at 41 with Death "simply waiting." Self-consistent narrative with no truncation; word count in line with Transcripts 1 & 2. Not a clip. (No cold-open sponsor/membership line in the pasted text — note for Strategy: either this video omitted it or the operator trimmed the pre-roll; the post-"now on to the story" body is intact.)
+
+**Recurring structural signals (light note for Strategy Cell — STATE 5 does the full Style DNA):**
+- **Cold-open monetization beat** then the pivot line "Now, on to the story" / "Now, onto our story" before narrative starts (T1 Audible, T2 channel membership; absent/trimmed in T3 paste).
+- **2nd-person "You are born…" framing** — viewer is the protagonist throughout, present tense.
+- **Chronological age-milestone life arc** — explicit ages mark beats (born → 5/7 → 12/13 → 16/18 → 23 → 30 → 40s) running birth to death/obsolescence.
+- **Deadpan, grim, matter-of-fact tone** — atrocity delivered flatly ("noted, logged, filed away as not dead yet"; "like it is simply the next thing").
+- **Recurring "the system / the machine" thesis** — each ends on the protagonist as a replaceable gear/cog in an indifferent institution (T1 "just one of its gears… this machine never stops"; T2 "the cycle continues"; T3 "your role in this machine… it just needed you to show up").
+- **Bleak closing reflection** — final beat zooms out to the impersonal verdict of history/the institution, denying the protagonist agency or remembrance.
+- Word counts cluster tightly (~3,117 / 3,147 / 3,227), implying a consistent ~3,000–3,300-word target for the ~22–23 min long-form format.
 
 ## STATE 4 — Topic / Ideas — `pending`
 *(Strategy Cell)*
