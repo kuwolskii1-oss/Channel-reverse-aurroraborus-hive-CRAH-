@@ -225,10 +225,80 @@ And there is one last task. You make sure of the jar. You have carried it for fi
 
 You die in a small room that is not your home, because you never had a home, only postings. And the machine you served does not pause to notice. The pots are emptied the next morning by a boy fresh from a starving village, who carries his own jar and dreams of the Directorate and does not yet know what you knew. The emperor never learned your name. The histories will record the great eunuchs, the two or three who shook the empire, and forget the tens of thousands of you who simply made the household run. You were never meant to be remembered. You were a part. The system took a frightened boy, cut away everything that would have tied him to the world, sharpened what was left into something useful, used it until it dulled, and set it aside without a word. That was the whole of the design. It was working exactly as built. And it is happening to a new boy at the gate already, who said yes the way you said yes, who does not yet understand the cost. The machine does not stop. It was never built to stop. It only needs the next one to walk in.
 
-## STATE 7 — Visual Style Profile — `pending`
+## STATE 7 — Visual Style Profile — `✓ done`
 *(Visual Cell)*
 
-- Art style / palette / lighting / camera / composition / detail / mood:
+> **Source:** Derived from 5 operator-provided sample FRAMES (animation stills,
+> NOT thumbnails) from Bernard's actual videos, cross-checked against the STATE 5
+> Style DNA. The Queen viewed the pixels first-hand; this profile synthesizes
+> those observations into a reusable lock. Every STATE 8 image prompt for the
+> Eunuch-in-the-Forbidden-City video MUST follow this profile exactly.
+
+- **Art style — THE signature hybrid.** A deliberate jarring split inside every
+  character: **crude minimalist black stick-figure BODIES** (thin tapering
+  brush/marker lines, simple looping curved limbs, no torso volume, no hand or
+  foot detail, doodle-level) carrying **highly detailed, semi-realistic,
+  fully-shaded illustrated HUMAN FACES/HEADS** (individualized and expressive —
+  age, gender, ethnicity legible; wrinkles on elders, freckles on youths,
+  defined brows, real hair). Photoreal faces on doodle bodies — this mismatch is
+  the brand and must appear on every figure. **Backgrounds are the opposite of
+  the bodies:** richly painted, textured, semi-realistic historical environments
+  rendered at far higher effort than the characters (painterly architecture,
+  perspective, materials). Figures sit *inside* these deep painted environments
+  as crude line-drawn intrusions — a lone stick figure dwarfed by an
+  elaborately illustrated hall. Line quality on bodies = loose, imperfect,
+  hand-drawn marker; never clean vector, never volumetric.
+
+- **Palette — muted/earthy with a warm-vs-cool logic.** Dominant: desaturated
+  browns, tans, ochres, greys, dirt and stone tones. Two-mode accent logic:
+  (1) **warm accent pools** — campfire orange, lamp/lantern glow, a warm-lit
+  window — used sparingly as the bright note against an otherwise dark frame;
+  (2) **cool blue-grey ambient** for night, interiors of sorrow, and death
+  scenes. Daytime exteriors read as warm natural daylight over the same earthy
+  base. Saturation stays low everywhere except the deliberate warm light source.
+  Signature spot-color: **stylized blue tear-streaks** (the only "pure" color,
+  reserved for crying/grief, including small blue tear/water puddles).
+
+- **Lighting — motivated, chiaroscuro-lite.** Light has a logical in-scene
+  source (fire, lamp, window, open doorway, daylight) and pools warmly around
+  it, falling off into surrounding dark. Night/sorrow scenes: cold blue-grey,
+  low key, quiet. Intimate scenes: soft warm directional light, gentle
+  falloff. Grand-interior scenes: bright, airy, cool daylight flooding from
+  arched openings with floor reflections. Not hard noir contrast — a softened,
+  painterly chiaroscuro where one warm pool reads against a darker, cooler
+  ambient. Mood is set primarily through light temperature and key level.
+
+- **Camera — static cinematic stills, eye-level.** No motion, no dutch tilt;
+  steady straight-on framing. Two repeating modes: **wide establishing shots**
+  (deep one-point perspective into streets, halls, villages with the figure(s)
+  placed within the environment) and **intimate close-ups** (one or two figures
+  filling the frame, soft-focus painterly background behind). Choose wide to
+  show the world/institution; choose close-up to land an emotional beat.
+
+- **Composition — figures placed in deep painted environments.** Backgrounds
+  carry strong perspective and depth; characters are positioned within them
+  (seated rings around a fire, crowds along a receding lane, a single slumped
+  figure in a vast hall). Comfortable use of negative space and scale to make a
+  lone crude figure feel small against an elaborate setting. Framing tends
+  centered/balanced and still. **Subscribe watermark (a stick-figure-face icon
+  in a rounded square) sits BOTTOM-RIGHT** in essentially every frame — keep
+  that corner reserved/clear and place it there.
+
+- **Detail — deliberate bifurcation.** High detail is spent on exactly two
+  things: **faces** (semi-realistic, shaded, emotionally specific) and
+  **environments** (painterly, textured, historically furnished — columns,
+  frescoes, thatch, pottery, beds, stools, props). Everything else — the bodies,
+  limbs, posture lines — is intentionally crude and low-effort. Emotion is
+  carried by the detailed face plus body *posture* (weary slumps, splayed
+  limbs, bowed shoulders) and the signature **blue tear-streaks** as the
+  explicit crying cue.
+
+- **Mood — grim, melancholic, deadpan-tragic.** A somber historical register:
+  sorrow, weariness, quiet dread, death. But the crude doodle bodies inside
+  serious painted scenes create a constant **dark-comic undercut** — tragedy
+  delivered with a straight face through childlike figures, exactly mirroring
+  the script's flat-voiced, underplayed horror. The frame should feel heavy and
+  sad while the stick figures keep it from tipping into melodrama.
 
 ## STATE 8 — Image Prompts — `pending`
 *(Visual Cell)*
