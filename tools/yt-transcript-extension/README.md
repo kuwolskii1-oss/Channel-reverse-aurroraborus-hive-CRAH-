@@ -1,7 +1,22 @@
-# CRAH YT Transcript Grabber (browser extension)
+# CRAH YT Transcript & Frame Grabber (browser extension)
 
-One-click download of a YouTube video's full transcript — as **plain text** or
-**CRAH-ready JSON** — for STATE 3 ingestion by the Recon Cell.
+Two client-side capture tools in one popup:
+- **Transcript** → download a video's full transcript as **plain text** or
+  **CRAH-ready JSON** (STATE 3, Recon Cell).
+- **Frame** → pause on any moment and download that exact video frame as a
+  **PNG** (STATE 7 visual samples, Visual Cell).
+
+## Capturing frames (STATE 7)
+1. Play a Bernard video, **pause** on a representative moment (wide establishing
+   shot, character close-up, a grim set-piece, a transition).
+2. Click the extension → **Capture current frame (PNG)** → it saves the frame at
+   native resolution, named `frame_<title>_<mmss>.png`.
+3. Grab 3–5 varied frames, then drop the PNGs into the session.
+   These are animation **frames**, not thumbnails — exactly what STATE 7 wants.
+
+Note: frame capture works for standard YouTube video (like Bernard's). If a
+video is DRM-protected the canvas is "tainted" and capture throws a clear error
+— just fall back to a manual screenshot (Win+Shift+S) for that one.
 
 ## Why this exists
 The CRAH sandbox can't fetch transcripts: `youtube.com`/`googlevideo.com` are

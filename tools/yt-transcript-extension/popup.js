@@ -130,6 +130,60 @@ function buildFile(r, fmt, withTs) {
            mime: "text/plain" };
 }
 
+/* Runs in PAGE context. Draws the current <video> frame to a canvas and returns
+ * a PNG data URL. Works for standard (non-DRM) YouTube video like Bernard's;
+ * DRM/EME content taints the canvas and throws — caller falls back to a manual
+ * screenshot. */
+function captureFrameInPage() {
+  try {
+    const v = document.querySelector("video.html5-main-video") || document.querySelector("video");
+    if (!v) return { error: "No video element found. Open a watch page and start the video." };
+    if (!v.videoWidth || !v.videoHeight) return { error: "Video not ready yet. Let it play for a second, then retry." };
+    const c = document.createElement("canvas");
+    c.width = v.videoWidth; c.height = v.videoHeight;
+    c.getContext("2d").drawImage(v, 0, 0, c.width, c.height);
+    let dataUrl;
+    try {
+      dataUrl = c.toDataURL("image/png");
+    } catch (sec) {
+      return { error: "Canvas blocked (DRM/tainted): " + sec.message + " — use a manual screenshot (Win+Shift+S) for this video." };
+    }
+    const vd = (window.ytInitialPlayerResponse || {}).videoDetails || {};
+    return {
+      dataUrl,
+      time: Math.floor(v.currentTime || 0),
+      w: c.width, h: c.height,
+      videoId: vd.videoId || new URLSearchParams(location.search).get("v") || "",
+      title: vd.title || document.title.replace(/\s*-\s*YouTube$/, "")
+    };
+  } catch (e) {
+    return { error: "Capture error: " + (e && e.message ? e.message : String(e)) };
+  }
+}
+
+$("grab").addEventListener("click", async () => {
+  $("grab").disabled = true;
+  setStatus("Capturing frame…");
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    if (!tab || !/^https:\/\/www\.youtube\.com\/watch/.test(tab.url || "")) {
+      setStatus("Open a YouTube video (youtube.com/watch?v=…) first.");
+      $("grab").disabled = false; return;
+    }
+    const [{ result }] = await chrome.scripting.executeScript({
+      target: { tabId: tab.id }, world: "MAIN", func: captureFrameInPage
+    });
+    if (!result || result.error) { setStatus(result ? result.error : "No result."); $("grab").disabled = false; return; }
+    const safe = (result.title || result.videoId || "frame").replace(/[^\w\-]+/g, "_").slice(0, 50);
+    const name = `frame_${safe}_${mmss(result.time)}.png`;
+    await chrome.downloads.download({ url: result.dataUrl, filename: name, saveAs: true });
+    setStatus(`Saved ${name}\n${result.w}×${result.h} at ${mmss(result.time)}.`);
+  } catch (e) {
+    setStatus("Error: " + (e && e.message ? e.message : String(e)));
+  }
+  $("grab").disabled = false;
+});
+
 $("go").addEventListener("click", async () => {
   $("go").disabled = true;
   setStatus("Reading transcript…");
