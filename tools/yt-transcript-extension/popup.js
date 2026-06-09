@@ -7,43 +7,95 @@
 const $ = (id) => document.getElementById(id);
 const setStatus = (m) => { $("status").textContent = m; };
 
-/* Runs in the PAGE context. Returns {videoId,title,lang,segments[]} or {error}. */
+/* Runs in the PAGE context. Returns {videoId,title,...,segments[]} or {error}.
+ * Tries three methods in order, because YouTube's bot-protection token now
+ * makes direct caption fetches return empty bodies on many videos:
+ *   (1) timedtext json3 fetch  (fast, clean — when the URL token is valid)
+ *   (2) timedtext XML fetch    (same endpoint, default format)
+ *   (3) DOM scrape of YouTube's own rendered "Show transcript" panel (robust). */
 async function extractInPage() {
-  try {
-    const pr = window.ytInitialPlayerResponse;
-    if (!pr) return { error: "Player data not found. Reload the watch page and retry." };
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const pr = window.ytInitialPlayerResponse || {};
+  const vd = pr.videoDetails || {};
+  const meta = {
+    videoId: vd.videoId || new URLSearchParams(location.search).get("v") || "",
+    title: vd.title || document.title.replace(/\s*-\s*YouTube$/, ""),
+    author: vd.author || ""
+  };
+
+  // --- methods 1 & 2: fetch the caption track URL directly ---
+  async function fetchTrack() {
     const tracks = pr.captions
       && pr.captions.playerCaptionsTracklistRenderer
       && pr.captions.playerCaptionsTracklistRenderer.captionTracks;
-    if (!tracks || !tracks.length) return { error: "This video has no caption/transcript track." };
-
-    // Prefer a manual English track, then any English, then the first track.
-    const pick = tracks.find(t => t.languageCode === "en" && t.kind !== "asr")
-      || tracks.find(t => t.languageCode === "en")
+    if (!tracks || !tracks.length) return null;
+    const pick = tracks.find((t) => t.languageCode === "en" && t.kind !== "asr")
+      || tracks.find((t) => t.languageCode === "en")
       || tracks[0];
+    const base = pick.baseUrl;
+    // json3
+    try {
+      const u = base + (base.includes("?") ? "&" : "?") + "fmt=json3";
+      const body = await (await fetch(u, { credentials: "include" })).text();
+      if (body && body.trim()) {
+        const data = JSON.parse(body);
+        const segs = (data.events || []).filter((e) => e.segs).map((e) => ({
+          t: Math.round((e.tStartMs || 0) / 1000),
+          text: e.segs.map((s) => s.utf8).join("").replace(/\s+/g, " ").trim()
+        })).filter((s) => s.text);
+        if (segs.length) return { lang: pick.languageCode || "", kind: pick.kind === "asr" ? "asr" : "manual", segments: segs };
+      }
+    } catch (e) { /* fall through to XML */ }
+    // XML
+    try {
+      const body = await (await fetch(base, { credentials: "include" })).text();
+      if (body && body.trim()) {
+        const doc = new DOMParser().parseFromString(body, "text/xml");
+        const segs = [...doc.querySelectorAll("text")].map((n) => ({
+          t: Math.round(parseFloat(n.getAttribute("start") || "0")),
+          text: (n.textContent || "").replace(/\s+/g, " ").trim()
+        })).filter((s) => s.text);
+        if (segs.length) return { lang: pick.languageCode || "", kind: pick.kind === "asr" ? "asr" : "manual", segments: segs };
+      }
+    } catch (e) { /* fall through to DOM scrape */ }
+    return null;
+  }
 
-    const url = pick.baseUrl + (pick.baseUrl.includes("?") ? "&" : "?") + "fmt=json3";
-    const res = await fetch(url, { credentials: "include" });
-    if (!res.ok) return { error: "Failed to fetch caption track (" + res.status + ")." };
-    const data = await res.json();
+  // --- method 3: open + scrape YouTube's rendered transcript panel ---
+  function readPanel() {
+    const rows = [...document.querySelectorAll("ytd-transcript-segment-renderer")];
+    if (!rows.length) return null;
+    const segs = rows.map((r) => {
+      const ts = (r.querySelector(".segment-timestamp")?.textContent || "").trim();
+      const tx = (r.querySelector(".segment-text, yt-formatted-string.segment-text")?.textContent || "").trim();
+      const sec = ts.split(":").map(Number).reduce((a, b) => a * 60 + b, 0) || 0;
+      return { t: sec, text: tx.replace(/\s+/g, " ").trim() };
+    }).filter((s) => s.text);
+    return segs.length ? segs : null;
+  }
+  async function scrapePanel() {
+    let segs = readPanel();
+    if (segs) return { lang: "", kind: "panel", segments: segs };
+    const expand = document.querySelector("tp-yt-paper-button#expand, #expand");
+    if (expand) { expand.click(); await sleep(350); }
+    const btn = [...document.querySelectorAll("button, yt-button-shape button, ytd-button-renderer button")]
+      .find((b) => /transcript/i.test((b.getAttribute("aria-label") || "") + " " + (b.textContent || "")));
+    if (btn) btn.click();
+    for (let i = 0; i < 40 && !segs; i++) { await sleep(200); segs = readPanel(); }
+    return segs ? { lang: "", kind: "panel", segments: segs } : null;
+  }
 
-    const segments = (data.events || [])
-      .filter(e => e.segs)
-      .map(e => ({
-        t: Math.round((e.tStartMs || 0) / 1000),
-        text: e.segs.map(s => s.utf8).join("").replace(/\s+/g, " ").trim()
-      }))
-      .filter(s => s.text);
-
-    const vd = (pr.videoDetails || {});
-    return {
-      videoId: vd.videoId || "",
-      title: vd.title || document.title.replace(/ - YouTube$/, ""),
-      author: vd.author || "",
-      lang: pick.languageCode || "",
-      kind: pick.kind === "asr" ? "asr" : "manual",
-      segments
-    };
+  try {
+    if (!pr || !pr.captions) {
+      if (!/\/watch/.test(location.pathname)) {
+        return { error: "Open the video's watch page (youtube.com/watch?v=…), not the homepage or channel page." };
+      }
+    }
+    const got = (await fetchTrack()) || (await scrapePanel());
+    if (!got) {
+      return { error: "No transcript found. Confirm the video has captions, the description is expanded, then retry. If it persists, reload the page once first." };
+    }
+    return Object.assign(meta, got);
   } catch (e) {
     return { error: "Extractor error: " + (e && e.message ? e.message : String(e)) };
   }

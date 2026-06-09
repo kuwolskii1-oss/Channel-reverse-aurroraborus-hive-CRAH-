@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CRAH YT Transcript Grabber",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "One-click download of a YouTube video's full transcript as TXT or CRAH-ready JSON (for STATE 3 ingestion).",
   "permissions": ["scripting", "activeTab", "downloads"],
   "host_permissions": ["https://www.youtube.com/*"],
