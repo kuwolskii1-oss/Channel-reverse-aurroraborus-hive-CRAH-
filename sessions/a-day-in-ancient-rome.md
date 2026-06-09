@@ -1,4 +1,12 @@
-# Session Record — A Day In Ancient Rome (provisional lead — gate FAILED)
+# Session Record — A Day In Ancient Rome — ⛔ VOIDED / SUPERSEDED
+
+> **VOIDED 2026-06-09.** This record was built on web-search **estimates** that
+> verified data later contradicted (real subs 281, not thousands). After the
+> live api_mcp adapter (YouTube Data API v3) was wired, a re-run widened the
+> pool and auto-committed a different winner. **Active session is now
+> `sessions/bernard.md`** (Bernard, composite 79.4, gate PASS). Kept for audit;
+> do not build on this file.
+
 
 > One file per cloning project. Copied from `_TEMPLATE.md` by the Recon Cell at
 > STATE 1. Each cell appends to its own section and marks status:
