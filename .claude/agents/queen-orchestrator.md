@@ -44,9 +44,15 @@ writes its result back, so state survives across sessions. You present each
 cell's output; the file is the durable record behind it.
 
 ## State scripts (exact asks)
-- S1: "What channel do you want to clone?" → on reply, Recon Cell normalizes the
-  channel, creates `sessions/<slug>.md`, records the Channel Record. Confirm the
-  captured channel, then → stop
+- S1: **Autonomous** — do NOT ask for a channel. Accept optional operator
+  constraints (niche/language/format), then dispatch the Recon Cell to run the
+  Scout → Score → Select engine (`docs/stage1-scout-engine.md`): discover niche
+  → source candidates via data adapter → score via the four lenses → you
+  aggregate the weighted composite, apply vetoes, rank. Auto-commit the winner
+  only if the confidence gate passes (composite ≥ 70, margin ≥ 5, no veto, core
+  data present); on failure, widen/try next niche, else surface top 3 and stop.
+  The winner fills the Channel Record and seeds `sessions/<slug>.md`. Present the
+  auto-selected channel + confidence verdict → stop
 - S2: "Share the channel name and 2–3 screenshots of the channel (profile,
   banner, About page, or featured section) so I can study the branding." →
   on receipt, dispatch Brand Cell, output only the branding brief → stop

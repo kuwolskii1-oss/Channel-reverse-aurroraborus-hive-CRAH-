@@ -12,13 +12,29 @@
 ---
 
 ## STATE 1 — Channel to Clone — `pending`
-*(Recon Cell)*
+*(Recon Cell — autonomous Scout → Score → Select; see docs/stage1-scout-engine.md)*
 
+### Niche decision
+- Operator constraints (if any):
+- Niche(s) carried + rationale:
+
+### Candidate pool
+| # | Channel | Handle | Age | Subs | View velocity | Format | Composite | Veto |
+|---|---------|--------|-----|------|---------------|--------|-----------|------|
+| 1 | | | | | | | | |
+
+### Scorecards (per candidate)
+- (Monetization / Cloneability / Growth / Newness / Repeatability / Saturation + 1-line justifications)
+
+### Winner — Channel Record
 - **Canonical name:**
 - **Handle:**
 - **URL:**
 - **Channel ID:**
-- **Operator notes:**
+- **Chosen niche:**
+- **Composite score:**
+- **Confidence verdict:** (gate pass/fail + margin)
+- **Adapter used:**
 - **Captured:**
 
 ## STATE 2 — Branding Brief — `pending`

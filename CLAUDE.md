@@ -22,7 +22,7 @@ advances the flow.
 
 | Cell | States | Responsibility |
 |------|--------|----------------|
-| Recon | 1, 3 | Channel-to-clone intake + 2–3 full transcripts |
+| Recon | 1, 3 | Autonomous channel discovery + selection (Scout→Score→Select) + 2–3 full transcripts |
 | Brand | 2 | Branding brief (names, descriptions, logo + banner prompts) |
 | Strategy | 4, 5 | Topic/ideas + Style DNA extraction |
 | Script | 6 | Style-locked script, target word count ±5% |
@@ -56,7 +56,7 @@ shared context instead of re-deriving it from chat. See `sessions/README.md`.
 
 | State | Action | Cell |
 |-------|--------|------|
-| 1 | Ask: "What channel do you want to clone?" → normalize channel, create `sessions/<slug>.md`, record it → stop | Recon |
+| 1 | **Autonomous Scout→Score→Select** (`docs/stage1-scout-engine.md`): discover niche → source candidates via data adapter → score via 4 lenses → Queen aggregates + confidence gate → auto-commit winner → seed `sessions/<slug>.md` → stop | Recon |
 | 2 | Ask for channel name + 2–3 branding screenshots → branding brief → stop | Brand |
 | 3 | Ask: "Provide 2–3 FULL video transcripts from this channel." → stop | Recon |
 | 4 | Ask: "Do you want me to generate video ideas or do you already have a topic?" → stop | Strategy |
