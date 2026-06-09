@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px/1.4 system-ui, sans-serif; width: 260px; margin: 0; padding: 12px; }
+    h1 { font-size: 13px; margin: 0 0 8px; }
+    label { display: block; margin: 6px 0; }
+    button { width: 100%; padding: 8px; margin-top: 8px; cursor: pointer;
+             border: 0; border-radius: 6px; background: #0b57d0; color: #fff; font-weight: 600; }
+    button:disabled { background: #9aa; cursor: default; }
+    #status { margin-top: 8px; white-space: pre-wrap; color: #444; min-height: 1.4em; }
+  </style>
+</head>
+<body>
+  <h1>CRAH Transcript Grabber</h1>
+  <label>Format:
+    <select id="fmt">
+      <option value="json">CRAH JSON (recommended)</option>
+      <option value="txt">Plain text</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="ts" /> include timestamps (txt only)</label>
+  <button id="go">Download transcript</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
