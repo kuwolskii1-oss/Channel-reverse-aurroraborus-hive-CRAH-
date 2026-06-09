@@ -107,11 +107,37 @@
 - **Bleak closing reflection** — final beat zooms out to the impersonal verdict of history/the institution, denying the protagonist agency or remembrance.
 - Word counts cluster tightly (~3,117 / 3,147 / 3,227), implying a consistent ~3,000–3,300-word target for the ~22–23 min long-form format.
 
-## STATE 4 — Topic / Ideas — `pending`
-*(Strategy Cell)*
+## STATE 4 — Topic / Ideas — `✓ done`
+*(Strategy Cell — generation; Queen-aggregated panel vote for selection)*
 
-- Mode (operator topic vs. generated ideas):
-- Chosen topic:
+- **Mode:** generated ideas (8-topic slate), winner chosen by differentiated 3-lens panel vote.
+
+### Candidate slate (8, style-locked "Why It Sucks to Be Born a [role] (in [era])")
+1. Spartan Boy (Classical Sparta, agoge)
+2. Aztec Captive's Son (Tenochtitlan ~1500)
+3. **Eunuch in the Forbidden City (Ming China ~1500s)**
+4. Plague-Pit Gravedigger (London 1665)
+5. Janissary Boy (Ottoman devshirme ~1500s)
+6. Child Chimney Sweep (Victorian London ~1840)
+7. Helot Farmer (Messenia under Sparta)
+8. Coal Trapper Girl (Welsh pit ~1842)
+
+### Panel scores (0–100 per lens) + weighted composite (Hook 40 / Demand 30 / Production 30)
+| # | Topic | Hook | Demand | Production | Composite |
+|---|-------|------|--------|-----------|-----------|
+| 3 | **Eunuch, Forbidden City** | 89 | 84 | 86 | **86.6** ← winner |
+| 2 | Aztec Captive's Son | 92 | 88 | 68 | 83.6 |
+| 5 | Janissary Boy | 78 | 79 | 92 | 82.5 |
+| 1 | Spartan Boy | 71 | 62 | 90 | 74.0 |
+| 8 | Coal Trapper Girl | 85 | 70 | 58 | 72.4 |
+| 4 | Plague-Pit Gravedigger | 74 | 76 | 49 | 67.1 |
+| 6 | Child Chimney Sweep | 83 | 58 | 54 | 66.8 |
+| 7 | Helot Farmer | 80 | 49 | 44 | 59.9 |
+
+### Selection rationale
+- **Winner — Why It Sucks to Be Born a Eunuch in the Forbidden City (Ming China).** Only candidate in the top tier of ALL three lenses (no weak axis = highest floor). Aztec had the best hook/demand but the production lens flagged a thin midsection (groomed→sacrificed) risking a mid-video sag in the 22-min arc — the exact failure this format can't afford. Janissary was the production favorite but mid on hook/demand. Eunuch balances a shocking recurring object (the jar carried "to be buried whole"), a clean rising-then-hollow power arc, exotic visual variety, and a sharp "tool sharpened by mutilation, discarded when dull" machine thesis.
+- **Chosen topic:** *Why It Sucks to Be Born a Eunuch in the Forbidden City (Ming Dynasty China)*
+- **Close alternates if operator overrides:** #2 Aztec Captive's Son (max click-appeal, needs midsection work), #3 Janissary Boy (cleanest arc).
 
 ## STATE 5 — Style DNA — `pending`
 *(Strategy Cell)*
