@@ -62,13 +62,23 @@
 - **Adapter used:** api_mcp (YouTube Data API v3) — verified, live
 - **Captured:** 2026-06-09
 
-## STATE 2 — Branding Brief — `pending`
+## STATE 2 — Branding Brief — `✓ done`
 *(Brand Cell)*
 
 - Name variants (5):
+  1. **Grimsketch** — "grim" + the hand-drawn sketch register; signals dark history rendered in stick-figure line art.
+  2. **The Worst Job in History** — names the recurring angle directly (rotating misery of historical roles) without copying any source title.
+  3. **Doodle Doomsday** — playful-deadpan pairing of childlike doodle art with grim historical fate.
+  4. **Stickman's Dark History** — plainly tells the viewer: stick-figure animation, grim past, edutainment.
+  5. **Born Unlucky** — fronts the "imagine being born into this awful role/era" hook that drives the format.
+
 - Description variants (2):
-- Logo prompt:
-- Banner prompt:
+  - **Short (~1 line):** Stick-figure history about all the brutal, miserable ways people used to live — and why you got lucky being born now.
+  - **Longer (~2-3 sentences):** I draw little stick people and walk them through the grimmest jobs, roles, and eras in human history. Each video is a deadpan tour of one terrible life — the rules, the suffering, and the strange details schoolbooks skip. History's a horror show; the stick figures just make it easier to watch.
+
+- Logo prompt: Minimalist circular avatar on a flat muted parchment-tan background. A single hand-drawn black stick figure stands centered, drawn in loose imperfect marker-style line art — round blank head, thin limbs, slightly slumped defeated posture. Above its head floats a small black storm cloud with one tiny lightning bolt, signaling grim historical misfortune in a deadpan comic tone. No face details, no color beyond black line and tan ground, thick clean outline so it reads at small size. Childlike doodle aesthetic meets dark history-edutainment register. Flat 2D, no gradients, no shading.
+
+- Banner prompt: Wide YouTube channel banner, flat 2D hand-drawn stick-figure style on an aged parchment / muted desaturated cream background with faint paper texture. A horizontal procession of small black stick figures, each in a different grim historical role, marches left to right across the lower third — a chained laborer hauling a block, a plague doctor with a beak mask, a soldier with a crude spear, a peasant bent under a heavy sack, an executioner with a small axe — all in loose imperfect marker line art, blank round heads, exaggerated weary postures. Sparse minimalist props (a tiny gallows, a small storm cloud, a crooked tombstone) sketched in the same line style. Tone is deadpan dark comedy: history's miseries rendered as simple doodles. Leave clear negative space in the center-safe zone for channel name and avatar overlay. Black line art on parchment only, no rich color, no gradients, no realistic detail, flat and clean.
 
 ## STATE 3 — Transcripts — `pending`
 *(Recon Cell)*
