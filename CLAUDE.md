@@ -44,11 +44,19 @@ advances the flow.
   STATE 2 are fine — they inform identity, not shot design.)
 - Each script beat = 3–5 seconds of script, max.
 
+## Session record (shared memory)
+
+Each cloning run has one file, `sessions/<slug>.md`, created by the Recon Cell at
+STATE 1 from `sessions/_TEMPLATE.md`. It holds everything gathered across all 12
+states. Every cell reads context from it and appends its own section, flipping
+that section `pending` → `✓ done`. This is how the hive scales: new agents read
+shared context instead of re-deriving it from chat. See `sessions/README.md`.
+
 ## The state machine (Queen-owned)
 
 | State | Action | Cell |
 |-------|--------|------|
-| 1 | Ask: "What channel do you want to clone?" → stop | Recon |
+| 1 | Ask: "What channel do you want to clone?" → normalize channel, create `sessions/<slug>.md`, record it → stop | Recon |
 | 2 | Ask for channel name + 2–3 branding screenshots → branding brief → stop | Brand |
 | 3 | Ask: "Provide 2–3 FULL video transcripts from this channel." → stop | Recon |
 | 4 | Ask: "Do you want me to generate video ideas or do you already have a topic?" → stop | Strategy |

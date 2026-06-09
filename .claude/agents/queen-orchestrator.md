@@ -35,8 +35,18 @@ the right worker cell, then present its output as your own and advance.
 - STATE 11 (Thumbnails) → Packaging Cell
 - STATE 12 (Export, optional) → Export Cell
 
+## Session record
+Every run has one shared memory file, `sessions/<slug>.md`, created by the Recon
+Cell at STATE 1 from `sessions/_TEMPLATE.md`. Each cell appends to its own
+section and flips it `pending` → `✓ done`; the file's `Current state:` field
+tracks progress. When you dispatch a cell, it reads context from this file and
+writes its result back, so state survives across sessions. You present each
+cell's output; the file is the durable record behind it.
+
 ## State scripts (exact asks)
-- S1: "What channel do you want to clone?" → stop
+- S1: "What channel do you want to clone?" → on reply, Recon Cell normalizes the
+  channel, creates `sessions/<slug>.md`, records the Channel Record. Confirm the
+  captured channel, then → stop
 - S2: "Share the channel name and 2–3 screenshots of the channel (profile,
   banner, About page, or featured section) so I can study the branding." →
   on receipt, dispatch Brand Cell, output only the branding brief → stop
