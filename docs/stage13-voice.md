@@ -33,11 +33,24 @@ use a neutral synthetic voice in the same register.
 | Piper / Coqui (local) | local, pip | `pip` works here and `ffmpeg` is available, but voice model weights download from `huggingface.co`, which is firewalled. Works only if weights are pre-cached or HF is allowlisted. |
 
 **This sandbox:** same wall as STATE 3/audio — cloud TTS hosts and HF model
-weights are blocked. So in-environment auto-generation is not currently possible;
-the reliable path is **operator-supplied audio** (generate in an external TTS,
-drop the file), or widen the network policy / enable Cloud TTS for unattended
-runs. A `tools/synthesize.py` helper can be added (script → 16-bit WAV via a
-TTS backend → ffmpeg to mp3) once a reachable backend exists.
+weights are blocked. Verified: `api.elevenlabs.io` returns **403 "Host not in
+allowlist"** — that's the network policy, **not** an auth failure, so a valid
+ElevenLabs key does not help *until the host is reachable*. To automate:
+- **Allowlist `api.elevenlabs.io`** in the environment's network policy, then run
+  `tools/synthesize.py` in-sandbox with the key set; or
+- **Run `tools/synthesize.py` locally** (no firewall) with the key; or
+- **Operator-supplied audio** — generate in any external TTS and drop the file in
+  (mirrors the STATE 3 transcript handoff).
+
+### `tools/synthesize.py` (ElevenLabs adapter — built)
+Script → chunked on sentence boundaries (≤2200 chars/request) → ElevenLabs TTS
+per chunk → stitched into one mp3 via ffmpeg. Env: `ELEVENLABS_API_KEY`,
+`ELEVENLABS_VOICE_ID` (pick a calm deadpan male voice), optional
+`ELEVENLABS_MODEL`. Emits a clear "Host not in allowlist" message if the host is
+firewalled. Run:
+```
+python tools/synthesize.py <script.txt> -o voice/<slug>-narration.mp3
+```
 
 ## Procedure
 1. Confirm/define the voice profile from the source narrator.
