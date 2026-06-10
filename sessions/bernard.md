@@ -336,11 +336,22 @@ You die in a small room that is not your home, because you never had a home, onl
 **Beat 8** — "A river that is either too high or too low, never the thing you need."
 [STYLE] WIDE establishing. A muddy low river in a wide eroded bank, dried cracked edges, painterly brown water under flat grey sky, distant bare hills. Cool muted palette, deep perspective along the riverbed, empty and indifferent.
 
-## STATE 9 — Video Prompts — `pending`
+## STATE 9 — Video Prompts — `✓ done`
 *(Visual Cell)*
 
-- Requested? (y/n):
-- Prompts:
+- **Requested?** yes
+- **Total beats:** 241 (one motion prompt per STATE 8 still, aligned 1:1).
+- **Full set:** `sessions/video-prompts-bernard.md`
+- **MOTION TOKEN — [MOTION]:** Limited cut-out / paper-puppet animation, NOT fluid full animation. Hold the flat 2D hand-drawn painterly look exactly — no realism drift, no style change, no morphing. Characters stay mostly static "puppets" with only ONE or TWO isolated moving parts. Allowed motion only: slow camera push-in/pull-out/gentle pan or parallax across the painted background; subtle character micro-motion (small head turn/tilt, a swinging stick-limb, shoulders rising/falling with breath, small mouth/face movement, a slow blink); stylized BLUE tear-streaks slowly welling or sliding down; environmental ambience (fire flicker + ember drift, lantern glow pulsing, wind moving grass/dust/hair/cloth, falling snow/rain, drifting smoke, distant haze). EXPLICITLY AVOID fluid lifelike body animation, walk cycles, running, limb morphing, 3D fly-throughs. ~3–5 s per clip.
+- **Sample (first 8):**
+  1. Very slow push-in toward the tiny centered boy; one small head-tilt looking up; faint drifting haze + dust over gold roofs. ~5s.
+  2. Hold framing; boy's shoulders rise/fall once with a breath, then a slow single blink; faint warm light flickers on the wall. ~4s.
+  3. Slow push-in on the leaning houses; the warm window glow gently pulses; thin smoke drifts, faint dust. No characters move. ~5s.
+  4. Gentle slow pan across the grey sky; the lone smoke trail rises and bends; faint wind stirs ground haze; static houses. ~5s.
+  5. Very slow push-in down the road toward the faint distant city; hazy distance shimmers; light dust drifts across warm foreground. ~5s.
+  6. Hold frame; dry grass bends and dust streaks sideways in wind, houses dead still; slight parallax drift across the cluster. ~4s.
+  7. Slow pan along barren furrows in perspective; sparse crops sway weakly in faint wind; grey light steady, no figures. ~4s.
+  8. Slow push-in along the riverbed; brown water ripples faintly, edges shimmer; distant hills hold still under flat grey light. ~4s.
 
 ## STATE 10 — Thumbnail Analysis — `pending`
 *(Packaging Cell)*
