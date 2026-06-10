@@ -468,11 +468,11 @@ You die in a small room that is not your home, because you never had a home, onl
 - **Why it clicks:** Betrayal + injustice + pathos — "served his whole life, then thrown out like trash." Moral-outrage and tragedy bait closing the arc.
 - **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast. Foreground: an old broken Ming eunuch collapsed on the ground, exaggerated wailing crying meme-face with a wide open mouth and heavy stylized blue tear-streaks pouring down, one crude hand reaching up in vain, a small cracked ceramic jar rolling away from him. Behind and above, a smug palace official with an exaggerated leering dismissive grin literally kicking and shoving him out through a gate, foot raised mid-kick. Crude filled-in cartoon bodies. Simple saturated blood-red palace gate, a cold blue-grey sliver of dusk visible outside the gate, heavy reds and oranges, high contrast. ALL-CAPS bold text "USED THEN DUMPED" with heavy black outline filled bright yellow, placed in the TOP-LEFT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, cruel, exaggerated, outrage-baiting.
 
-## STATE 12 — Export — `pending`
+## STATE 12 — Export — `✓ done`
 *(Export Cell)*
 
-- Requested? (y/n):
-- Document path:
+- Requested? (y/n): yes
+- Document path: exports/bernard-CRAH.docx
 
 ## STATE 13 — Voice Generation — `pending`
 *(Voice Cell — see docs/stage13-voice.md)*
