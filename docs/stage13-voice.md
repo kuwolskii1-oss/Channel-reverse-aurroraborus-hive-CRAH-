@@ -36,6 +36,11 @@ use a neutral synthetic voice in the same register.
 weights are blocked. Verified: `api.elevenlabs.io` returns **403 "Host not in
 allowlist"** — that's the network policy, **not** an auth failure, so a valid
 ElevenLabs key does not help *until the host is reachable*. To automate:
+- **GitHub Actions (recommended — no laptop, no Claude session):** the repo ships
+  `.github/workflows/voice.yml`. Add repo secrets `ELEVENLABS_API_KEY` and
+  `ELEVENLABS_VOICE_ID`, then Actions tab → "Generate Voiceover (STATE 13)" → Run
+  workflow. GitHub's runner has full internet + ffmpeg; the narration mp3 comes
+  out as a downloadable artifact. Free within Actions minutes (~1–2 min/run).
 - **Allowlist `api.elevenlabs.io`** in the environment's network policy, then run
   `tools/synthesize.py` in-sandbox with the key set; or
 - **Run `tools/synthesize.py` locally** (no firewall) with the key; or

@@ -1,0 +1,44 @@
+name: Generate Voiceover (STATE 13)
+
+# CRAH STATE 13 — runs the ElevenLabs voice adapter in GitHub's cloud (full
+# internet, no laptop, no Claude session). Manual trigger only.
+#
+# SETUP (one time): repo Settings -> Secrets and variables -> Actions -> add:
+#   ELEVENLABS_API_KEY   = your ElevenLabs key
+#   ELEVENLABS_VOICE_ID  = a calm, deadpan male voice id from your Voices page
+# Then: Actions tab -> "Generate Voiceover (STATE 13)" -> Run workflow.
+# Download the narration mp3 from the run's Artifacts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      script_path:
+        description: "Path to the narration script (.txt)"
+        default: "voice/eunuch-script.txt"
+        required: true
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg helper
+        run: pip install imageio-ffmpeg
+
+      - name: Synthesize narration
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+        run: python tools/synthesize.py "${{ github.event.inputs.script_path }}" -o voice/narration.mp3
+
+      - name: Upload narration mp3
+        uses: actions/upload-artifact@v4
+        with:
+          name: narration-mp3
+          path: voice/narration.mp3
+          if-no-files-found: error
