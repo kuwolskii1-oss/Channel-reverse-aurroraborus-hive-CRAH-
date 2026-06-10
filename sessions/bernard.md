@@ -7,7 +7,7 @@
 
 - **Session slug:** bernard
 - **Created:** 2026-06-09
-- **Current state:** 1 → done (gate passed); ready for STATE 2
+- **Current state:** ALL 13 STATES COMPLETE — demo run finished 2026-06-10
 
 ---
 
@@ -474,10 +474,11 @@ You die in a small room that is not your home, because you never had a home, onl
 - Requested? (y/n): yes
 - Document path: exports/bernard-CRAH.docx
 
-## STATE 13 — Voice Generation — `pending`
+## STATE 13 — Voice Generation — `✓ done`
 *(Voice Cell — see docs/stage13-voice.md)*
 
-- Voice profile (narrator register / pacing): calm, measured, deadpan **male** narrator; flat affect underplaying grim content; steady cadence ≈2.25–2.3 wps (~135–138 wpm), short pauses at paragraph breaks. Match Bernard's delivery style, not a real person's identity.
-- Backend used:
-- Audio path(s):
-- Duration:
+- Voice profile (narrator register / pacing): calm, measured, deadpan **male** narrator; flat affect underplaying grim content; steady cadence ≈2.25–2.3 wps (~135–138 wpm), short pauses at paragraph breaks. Match Bernard's delivery style, not a real person's identity. Voice used: ElevenLabs premade "Daniel" (`onwK4e9ZLuTAKqWW03F9`).
+- Backend used: ElevenLabs TTS (`eleven_multilingual_v2`) via GitHub Actions workflow `.github/workflows/voice.yml`, run #1 (id 27309835914), all steps green; key passed as masked one-time dispatch input (not stored).
+- Audio path(s): GitHub Actions artifact **`narration-mp3`** on run #1 — https://github.com/kuwolskii1-oss/Channel-reverse-aurroraborus-hive-CRAH-/actions/runs/27309835914 (artifact id 7549752071, sha256 efe065c0…, expires 2026-09-08). 19.1 MB mp3 zipped; source text `voice/eunuch-script.txt` (3,165 words / 16,580 chars, 10 chunks).
+- Duration: ~22–23 min expected at the Style-DNA pace (19.1 MB mp3 is consistent with this at ~128 kbps).
+- Note: the CRAH sandbox cannot download the artifact binary (Azure blob host firewalled) — operator downloads it from the run page in one click.
