@@ -421,10 +421,52 @@ You die in a small room that is not your home, because you never had a home, onl
   phrase (a censored-profanity or shock fragment, OR a "EUNUCH (MING DYNASTY)"
   subject-label) — original wording, source formula.
 
-## STATE 11 — Thumbnails — `pending`
+## STATE 11 — Thumbnails — `✓ done`
 *(Packaging Cell)*
 
+> **Style lock:** All 5 use Bernard's THUMBNAIL formula (crude MEME / rage-comic /
+> wojak register — grotesque exaggerated faces, cruder filled-in bodies,
+> high-saturation high-contrast color, 2–4 ALL-CAPS words with heavy black
+> outline filled yellow OR red in a TOP corner, bottom-right kept clear for the
+> runtime badge). Explicitly NOT the painterly STATE 7 in-video STYLE TOKEN.
+> Wording is 100% original — formula-matched, never copied from Bernard.
+
 - 5 thumbnails:
+
+### Thumbnail 1 — "THE CUT" (angle: the castration procedure — the knife + the terrified boy)
+- **Text overlay:** "THEY CUT IT OFF" — ALL-CAPS, heavy black outline, fill **blood RED**, parked **TOP-LEFT**.
+- **Main visual:** Two meme-faced characters. Foreground: a small boy strapped to a low table, eyes bulging white in wide-eyed horror, mouth stretched in a screaming wojak grimace, blue sweat-beads flying off his face. Looming over him, a grinning "knife expert" with a leering rage-comic grin holds up a large gleaming curved blade catching a glint. Focal action = the raised knife about to descend.
+- **Background + palette:** Simple saturated blood-red room, single dim lantern. Heavy blood red and orange, high contrast; the blade is bright steel-white; black outlines on everything.
+- **Why it clicks:** Maximum taboo + gore + shock — the core unspeakable act, frozen one second before it happens. Pure flinch-and-click.
+- **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast. A small boy strapped down to a low wooden table, exaggerated wojak face with bulging wide white eyes and a screaming open-mouth grimace of pure terror, stylized blue sweat-beads flying off his head, crude filled-in cartoon body. Looming over him a grotesque grinning "knife expert" with a leering rage-comic grin, raising a large gleaming curved steel blade that catches a bright glint, about to strike. Simple saturated blood-red dungeon-like room, one dim lantern, heavy blood-red and orange palette, dramatic high contrast. ALL-CAPS bold text "THEY CUT IT OFF" with heavy black outline filled bright blood-red, placed in the TOP-LEFT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, grotesque, exaggerated, shocking.
+
+### Thumbnail 2 — "THE PRECIOUS" (angle: the jar of preserved flesh carried to be buried whole)
+- **Text overlay:** "IN A JAR?!" — ALL-CAPS, heavy black outline, fill **bright YELLOW**, parked **TOP-RIGHT**.
+- **Main visual:** One meme-faced eunuch fills the frame, cradling a small sealed ceramic jar to his chest like treasure, face locked in a queasy, wide-eyed, sweating grimace (disgust + dread). The jar glows with an unnatural highlight and a curiosity-baiting question-mark sparkle; viewer is left to imagine what's inside. His other hand clutches it possessively.
+- **Background + palette:** Simple saturated deep-orange palace interior, warm hall glow. Saturated oranges and yellows against the pale jar; black outlines.
+- **Why it clicks:** Curiosity + disgust — "what's IN the jar?" The withheld grotesque object forces the click to find out.
+- **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast. A single eunuch character filling the frame, exaggerated wojak face with wide bulging white eyes and a queasy sweating grimace of disgust and dread, stylized blue sweat-drops, crude filled-in cartoon body, cradling a small sealed pale ceramic jar tightly against his chest like treasure with both hands, possessive and fearful. The jar has an unnatural bright highlight and a small sparkle to bait curiosity about its contents. Simple saturated deep-orange Ming palace interior with a warm hall glow, saturated oranges and yellows, high contrast, the pale jar pops against the warm background. ALL-CAPS bold text "IN A JAR?!" with heavy black outline filled bright yellow, placed in the TOP-RIGHT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, grotesque, exaggerated, curiosity-baiting.
+
+### Thumbnail 3 — "EUNUCH (MING DYNASTY)" (angle: the shocking transformation — poor boy made into a eunuch)
+- **Text overlay:** "EUNUCH (MING DYNASTY)" — ALL-CAPS, heavy black outline, fill **bright YELLOW**, parked **TOP-LEFT** (subject+era label pattern).
+- **Main visual:** Split-contrast two-character setup. LEFT: a ragged starving peasant boy with a crying, blue-tear-streaked, hollow-cheeked meme-face (before). RIGHT: the same person remade — a robed palace eunuch with a hollow, broken, thousand-yard wojak stare (after), a faint blood-red glow between them. A bold meme arrow / divide separates the two halves to scream "transformation."
+- **Background + palette:** Left half drab grey dirt-village; right half saturated red-gold palace. Split palette, high contrast across the divide; black outlines.
+- **Why it clicks:** Before/after shock + curiosity — the grim "what they DID to him" reveal in one glance; the label spells out the taboo subject directly.
+- **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast, split-screen before/after composition with a bold dividing line down the middle. LEFT half: a ragged starving peasant boy, exaggerated crying meme-face with hollow cheeks, big watery eyes and stylized blue tear-streaks, drab grey dirt-village background. RIGHT half: the same person remade as a robed Ming palace eunuch, exaggerated hollow broken wojak face with a blank thousand-yard stare, saturated red-and-gold palace background, a faint ominous blood-red glow along the divide. Crude filled-in cartoon bodies. High contrast between the dull left and lurid right halves. ALL-CAPS bold text "EUNUCH (MING DYNASTY)" with heavy black outline filled bright yellow, placed in the TOP-LEFT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, grotesque, exaggerated, shocking transformation.
+
+### Thumbnail 4 — "HE RAN THE EMPIRE" (angle: palace shadow-power — the eunuch who secretly runs the court)
+- **Text overlay:** "HE SECRETLY RULED" — ALL-CAPS, heavy black outline, fill **blood RED**, parked **TOP-RIGHT**.
+- **Main visual:** Two meme-faced characters. Foreground dominant: a robed eunuch with a sinister, scheming, narrow-eyed leering grin, fingers steepled, pulling glowing red puppet-strings. Background/smaller: a tiny enthroned emperor figure with a startled wide-eyed wojak face, dangling on the strings, crown askew. Focal action = the eunuch puppeteering the throne.
+- **Background + palette:** Saturated red-and-gold throne hall, dramatic shadow behind the eunuch. Heavy reds, golds, with glowing red strings; black outlines.
+- **Why it clicks:** Shock + intrigue — "the lowest servant secretly OWNED the most powerful man alive." Forbidden-power reveal, over-promising drama.
+- **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast. Foreground dominant: a robed Ming palace eunuch with an exaggerated sinister scheming wojak face, narrow leering eyes and a sly grin, fingers steepled, manipulating glowing red puppet-strings. In the smaller background, a tiny emperor on a throne with a startled wide-eyed wojak face and crown askew, dangling helplessly on the glowing strings. Crude filled-in cartoon bodies. Simple saturated red-and-gold throne hall with a dramatic dark shadow looming behind the eunuch. Heavy reds and golds, glowing red strings, high contrast. ALL-CAPS bold text "HE SECRETLY RULED" with heavy black outline filled blood-red, placed in the TOP-RIGHT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, sinister, exaggerated, intriguing.
+
+### Thumbnail 5 — "THROWN AWAY" (angle: the discard / betrayal / grim end — used then purged)
+- **Text overlay:** "USED THEN DUMPED" — ALL-CAPS, heavy black outline, fill **bright YELLOW**, parked **TOP-LEFT**.
+- **Main visual:** Two meme-faced characters. Foreground: an old broken eunuch on the ground, mouth open in a wailing crying meme-face, blue tear-streaks pouring, one hand reaching up in vain, his little jar rolling away cracked. Behind/above: a smug official with a leering dismissive grin literally kicking/shoving him out a gate, foot raised. Focal action = the discard kick.
+- **Background + palette:** Saturated blood-red palace gate at a cold dusk edge. Heavy reds and oranges with a cold blue-grey sliver outside the gate; black outlines.
+- **Why it clicks:** Betrayal + injustice + pathos — "served his whole life, then thrown out like trash." Moral-outrage and tragedy bait closing the arc.
+- **Image-generation prompt:** Crude clickbait MEME / rage-comic / wojak thumbnail art, NOT painterly. Flat 2D cartoon, thick black outlines, high-saturation high-contrast. Foreground: an old broken Ming eunuch collapsed on the ground, exaggerated wailing crying meme-face with a wide open mouth and heavy stylized blue tear-streaks pouring down, one crude hand reaching up in vain, a small cracked ceramic jar rolling away from him. Behind and above, a smug palace official with an exaggerated leering dismissive grin literally kicking and shoving him out through a gate, foot raised mid-kick. Crude filled-in cartoon bodies. Simple saturated blood-red palace gate, a cold blue-grey sliver of dusk visible outside the gate, heavy reds and oranges, high contrast. ALL-CAPS bold text "USED THEN DUMPED" with heavy black outline filled bright yellow, placed in the TOP-LEFT corner. Keep the BOTTOM-RIGHT corner clear and empty. Lurid, cruel, exaggerated, outrage-baiting.
 
 ## STATE 12 — Export — `pending`
 *(Export Cell)*
