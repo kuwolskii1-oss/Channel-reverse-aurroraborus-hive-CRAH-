@@ -300,10 +300,41 @@ You die in a small room that is not your home, because you never had a home, onl
   the script's flat-voiced, underplayed horror. The frame should feel heavy and
   sad while the stick figures keep it from tipping into melodrama.
 
-## STATE 8 — Image Prompts — `pending`
+## STATE 8 — Image Prompts — `✓ done`
 *(Visual Cell)*
 
-- Per-beat prompts:
+- **Total beats:** 241 (full script, start to finish, ~3–5 s / ~8–12 words each).
+- **Full ordered prompt set:** `sessions/image-prompts-bernard.md` (STYLE TOKEN at top, all 241 beats with snippet + prompt). Kept out of this file to keep the Queen's context clean.
+
+- **STYLE TOKEN — [STYLE]:** Bernard hybrid style: crude minimalist black stick-figure body (loose tapering hand-drawn marker lines, looping limbs, no torso volume, no hands or feet) topped with a HIGHLY DETAILED semi-realistic fully-shaded illustrated human face (age/gender/ethnicity legible), placed INSIDE a richly painted, textured, semi-realistic Ming-dynasty Chinese environment. Muted earthy palette (browns, tans, ochres, greys); motivated chiaroscuro-lite lighting with a warm accent pool against cooler dark, or cool blue-grey ambient for night/grief/death; stylized BLUE tear-streaks as the only spot color for crying. Flat 2D, hand-drawn, no 3D render, no photoreal bodies. Static eye-level still. Bottom-right corner kept clear for the subscribe watermark.
+
+- Each prompt = **[STYLE]** + beat-specific scene (setting · character(s) with face description + expression · action/posture · framing WIDE/CLOSE-UP · lighting/time-of-day).
+
+- **First 8 beats (inline sample; full set in the prompts file):**
+
+**Beat 1** — "Before we start, if you'd like to go deeper on the Ming court and its eunuchs,"
+[STYLE] WIDE establishing. A vast painted Ming imperial palace courtyard at warm daylight — tiered gold-tiled roofs, red columns receding in deep perspective. One small crude stick figure with a curious young Chinese boy's face stands tiny and centered, dwarfed by the architecture.
+
+**Beat 2** — "I've left a reading list linked down in the description. Now, on to the story."
+[STYLE] CLOSE-UP. A single crude stick figure with a detailed neutral young northern-Chinese face faces forward against a softly painted tan palace-wall backdrop, warm low daylight, a faint scroll and brush painted beside him. Calm deadpan expression, quiet anticipation.
+
+**Beat 3** — "You are born in a dirt-floor village in northern China,"
+[STYLE] WIDE establishing. A poor northern-Chinese dirt village at dusk — a few leaning mud-brick thatched houses, bare earth, dry fields receding into haze. Cool dim ambient with one faint warm window glow. No figures, desolate, painterly textured ground.
+
+**Beat 4** — "late in the Ming dynasty, somewhere in the long quiet stretch of the fifteenth century."
+[STYLE] WIDE establishing. The same dirt village under a wide pale grey fifteenth-century sky, distant hills, a thin smoke trail from one hut. Muted browns and greys, flat overcast daylight, vast empty land, deep perspective, melancholic stillness.
+
+**Beat 5** — "The capital is far away. You will not hear its name said with any weight for years."
+[STYLE] WIDE establishing. A long dirt road winding from the foreground village toward a faint, tiny painted hint of a walled city on the far horizon. Cool hazy distance, warm dry foreground earth, immense empty space between near and far.
+
+**Beat 6** — "Your world is smaller than that. A few houses leaning into the wind."
+[STYLE] WIDE establishing. A tight cluster of three crooked thatched mud houses leaning in the wind, bending dry grass, dust in the air. Muted ochre-and-grey palette, flat windy daylight, painterly weathered textures, no figures, intimate and small.
+
+**Beat 7** — "A field that gives less every season."
+[STYLE] WIDE establishing. A patchy failing farm field of thin sparse crops in cracked dry brown soil, a low stone boundary, grey overcast light. Earthy desaturated tones, painterly barren furrows receding in perspective, quiet desolation.
+
+**Beat 8** — "A river that is either too high or too low, never the thing you need."
+[STYLE] WIDE establishing. A muddy low river in a wide eroded bank, dried cracked edges, painterly brown water under flat grey sky, distant bare hills. Cool muted palette, deep perspective along the riverbed, empty and indifferent.
 
 ## STATE 9 — Video Prompts — `pending`
 *(Visual Cell)*
