@@ -1,14 +1,14 @@
 name: Generate Voiceover (STATE 13)
 
 # CRAH STATE 13 — runs the ElevenLabs voice adapter in GitHub's cloud (full
-# internet, no laptop, no Claude session). Manual trigger only.
+# internet, no laptop, no Claude session). Manual / API trigger only.
 #
-# SETUP (one time): repo Settings -> Secrets and variables -> Actions -> add:
-#   ELEVENLABS_API_KEY   = your ElevenLabs key   (required)
-#   ELEVENLABS_VOICE_ID  = a voice id            (optional; defaults to a calm
-#                          deadpan male narrator voice if not set)
-# Then: Actions tab -> "Generate Voiceover (STATE 13)" -> Run workflow.
-# Download the narration mp3 from the run's Artifacts.
+# Key source (either works):
+#   - a repo secret ELEVENLABS_API_KEY (preferred, encrypted at rest), OR
+#   - the one-time `api_key` dispatch input below (masked in logs).
+# Voice id: optional `voice_id` input / ELEVENLABS_VOICE_ID secret; otherwise a
+# calm deadpan male premade voice ("Daniel") is used.
+# Output: narration mp3, uploaded as the run's "narration-mp3" artifact.
 
 on:
   workflow_dispatch:
@@ -17,6 +17,14 @@ on:
         description: "Path to the narration script (.txt)"
         default: "voice/eunuch-script.txt"
         required: true
+      api_key:
+        description: "ElevenLabs API key (one-time; leave blank to use the ELEVENLABS_API_KEY secret)"
+        required: false
+        default: ""
+      voice_id:
+        description: "ElevenLabs voice id (blank = default calm male narrator)"
+        required: false
+        default: ""
 
 jobs:
   tts:
@@ -28,14 +36,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Mask the API key in logs
+        env:
+          K: ${{ github.event.inputs.api_key }}
+        run: if [ -n "$K" ]; then echo "::add-mask::$K"; fi
+
       - name: Install ffmpeg helper
         run: pip install imageio-ffmpeg
 
       - name: Synthesize narration
         env:
-          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          # falls back to premade "Daniel" (calm, deadpan male) if no secret set
-          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID || 'onwK4e9ZLuTAKqWW03F9' }}
+          ELEVENLABS_API_KEY: ${{ github.event.inputs.api_key || secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ github.event.inputs.voice_id || secrets.ELEVENLABS_VOICE_ID || 'onwK4e9ZLuTAKqWW03F9' }}
         run: python tools/synthesize.py "${{ github.event.inputs.script_path }}" -o voice/narration.mp3
 
       - name: Upload narration mp3
