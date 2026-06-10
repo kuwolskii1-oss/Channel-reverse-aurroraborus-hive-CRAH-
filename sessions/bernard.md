@@ -353,10 +353,73 @@ You die in a small room that is not your home, because you never had a home, onl
   7. Slow pan along barren furrows in perspective; sparse crops sway weakly in faint wind; grey light steady, no figures. ~4s.
   8. Slow push-in along the riverbed; brown water ripples faintly, edges shimmer; distant hills hold still under flat grey light. ~4s.
 
-## STATE 10 — Thumbnail Analysis — `pending`
+## STATE 10 — Thumbnail Analysis — `✓ done`
 *(Packaging Cell)*
 
-- Text style / composition / contrast / emotion triggers:
+> **Source:** Derived from 4 operator-provided REAL thumbnails from Bernard's
+> channel (Queen viewed the pixels; this synthesizes those first-hand
+> observations). **CRITICAL DIVERGENCE FLAG:** Bernard's thumbnail style is
+> deliberately NOT his in-video art (STATE 7). In-video = muted, painterly,
+> semi-realistic detailed faces on crude stick bodies. **Thumbnails = loud CTR
+> clickbait in a crude MEME / rage-comic / wojak register** — exaggerated
+> grotesque cartoon faces (blank-white blushers, screaming criers, snarling
+> rage-faces, leering grins), cruder/fuller bodies, high-saturation
+> high-contrast color, huge bold text. The thumbnail OVER-PROMISES something
+> more lurid/taboo/extreme than the somber video delivers. STATE 11 must use
+> THIS meme style, NOT the painterly STATE 7 profile.
+
+- **Text style:** 2–4 words, ALL-CAPS, heavy/bold sans, thick black outline
+  (stroke) for pop. Fill is **bright yellow OR blood/fire red** (the only two
+  fill colors). Parked in a **top corner** (top-left or top-right). Two text
+  patterns: (1) **shock phrase**, often **censored profanity** with an asterisk
+  ("CROWNED SL*T", "TAKE IT B*TCH" — the asterisk both dodges demonetization
+  and amplifies the taboo); (2) **subject label + era in parentheses**
+  ("MIDWIFE (MING DYNASTY)", "DANCING BACHA BOY"). Never the full video title;
+  punchy fragment only. Rule: match this formula, never copy the exact source
+  words.
+
+- **Composition / layout:** **1–2 large meme-faced characters** filling the
+  frame at mid-to-close range, one clear **provocative focal action** (sex
+  tension / beating / gore / taboo dance). Two-character setups stage a
+  conflict/contrast (victim vs aggressor, watched vs watchers). Text occupies a
+  top corner over a simpler patch of background; characters dominate the lower
+  two-thirds. **Backgrounds are simple, single-location and punchy-saturated**
+  (red medieval room, torch dungeon, blood-soaked birth-bed, warm palatial
+  hall) — set the scene, don't compete with the subjects. **Keep the
+  bottom-right corner clear** (YouTube's runtime badge overlays there; not part
+  of the design).
+
+- **Contrast / color:** **High-saturation, high-contrast** — bright reds,
+  yellows, oranges, and heavy blood red dominate; black text outline maximizes
+  legibility at small size. This is the **inverse of the muted/earthy in-video
+  palette** (STATE 7's desaturated browns/tans/greys with a single warm pool).
+  Thumbnails crank saturation and contrast to win the feed; the video then
+  delivers a calmer, somber look.
+
+- **Art style note (DIVERGENCE — load-bearing for STATE 11):** Thumbnail faces
+  are **crude exaggerated meme / rage-comic / wojak** types (blank-white
+  blushing faces, screaming/crying meme faces, snarling rage-faces, leering
+  grins) — grotesque and cartoonish, NOT the semi-realistic shaded faces used
+  in-video. Bodies are **cruder and more filled-in** than the clean in-video
+  stick figures. STATE 11 prompts must specify this lurid meme register
+  explicitly and must NOT inherit the painterly STATE 7 / STATE 8 STYLE TOKEN.
+
+- **Emotion triggers / hook tactics:** shock, sex/lewd bait, gore/violence,
+  taboo/discomfort, moral outrage, and curiosity — each thumbnail mines the
+  **single most provocative angle** of the episode and over-promises against the
+  flatter, slower video. Extreme facial expressions (screaming, crying, leering,
+  snarling, blushing) do the emotional shouting; censored profanity adds
+  forbidden-fruit pull. The bait says "this is more extreme than you think."
+
+- **Implications for our Eunuch thumbnail (analysis only — designs in STATE
+  11):** The lurid hook for *Why It Sucks to Be Born a Eunuch in the Forbidden
+  City* is **"the cut" / castration + the jar of preserved flesh ("the
+  precious")**. That is the single most provocative, taboo, shock-and-gore angle
+  the episode offers and the one STATE 11 should mine — pairing a screaming or
+  horrified meme-face victim, the knife/procedure or the sealed jar, and a
+  blood-red high-contrast palette, with a top-corner yellow/red ALL-CAPS shock
+  phrase (a censored-profanity or shock fragment, OR a "EUNUCH (MING DYNASTY)"
+  subject-label) — original wording, source formula.
 
 ## STATE 11 — Thumbnails — `pending`
 *(Packaging Cell)*
