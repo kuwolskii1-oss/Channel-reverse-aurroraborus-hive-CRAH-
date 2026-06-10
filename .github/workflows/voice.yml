@@ -4,8 +4,9 @@ name: Generate Voiceover (STATE 13)
 # internet, no laptop, no Claude session). Manual trigger only.
 #
 # SETUP (one time): repo Settings -> Secrets and variables -> Actions -> add:
-#   ELEVENLABS_API_KEY   = your ElevenLabs key
-#   ELEVENLABS_VOICE_ID  = a calm, deadpan male voice id from your Voices page
+#   ELEVENLABS_API_KEY   = your ElevenLabs key   (required)
+#   ELEVENLABS_VOICE_ID  = a voice id            (optional; defaults to a calm
+#                          deadpan male narrator voice if not set)
 # Then: Actions tab -> "Generate Voiceover (STATE 13)" -> Run workflow.
 # Download the narration mp3 from the run's Artifacts.
 
@@ -33,7 +34,8 @@ jobs:
       - name: Synthesize narration
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          # falls back to premade "Daniel" (calm, deadpan male) if no secret set
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID || 'onwK4e9ZLuTAKqWW03F9' }}
         run: python tools/synthesize.py "${{ github.event.inputs.script_path }}" -o voice/narration.mp3
 
       - name: Upload narration mp3
