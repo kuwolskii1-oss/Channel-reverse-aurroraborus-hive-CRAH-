@@ -13,11 +13,11 @@ advances the flow.
 
 ```
                           👑 QUEEN  (state machine + routing)
-   ┌──────────┬──────────┬───────────┬──────────┬───────────┬────────────┬──────────┐
-   │ Recon    │ Brand    │ Strategy  │ Script   │ Visual    │ Packaging  │ Export   │
-   │ Cell     │ Cell     │ Cell      │ Cell     │ Cell      │ Cell       │ Cell     │
-   │ S1, S3   │ S2       │ S4, S5    │ S6       │ S7,S8,S9  │ S10, S11   │ S12      │
-   └──────────┴──────────┴───────────┴──────────┴───────────┴────────────┴──────────┘
+   ┌────────┬────────┬──────────┬────────┬──────────┬───────────┬────────┬───────┐
+   │ Recon  │ Brand  │ Strategy │ Script │ Visual   │ Packaging │ Export │ Voice │
+   │ Cell   │ Cell   │ Cell     │ Cell   │ Cell     │ Cell      │ Cell   │ Cell  │
+   │ S1,S3  │ S2     │ S4, S5   │ S6     │ S7,S8,S9 │ S10, S11  │ S12    │ S13   │
+   └────────┴────────┴──────────┴────────┴──────────┴───────────┴────────┴───────┘
 ```
 
 | Cell | States | Responsibility |
@@ -29,6 +29,7 @@ advances the flow.
 | Visual | 7, 8, 9 | Visual Style Profile, per-beat image prompts, video prompts |
 | Packaging | 10, 11 | Thumbnail analysis + 5 thumbnails |
 | Export | 12 | Word-document export |
+| Voice | 13 | Voiceover / TTS narration of the final script (`docs/stage13-voice.md`) |
 
 ## Global rules (apply to every cell, always)
 
@@ -47,7 +48,7 @@ advances the flow.
 ## Session record (shared memory)
 
 Each cloning run has one file, `sessions/<slug>.md`, created by the Recon Cell at
-STATE 1 from `sessions/_TEMPLATE.md`. It holds everything gathered across all 12
+STATE 1 from `sessions/_TEMPLATE.md`. It holds everything gathered across all 13
 states. Every cell reads context from it and appends its own section, flipping
 that section `pending` → `✓ done`. This is how the hive scales: new agents read
 shared context instead of re-deriving it from chat. See `sessions/README.md`.
@@ -68,6 +69,7 @@ shared context instead of re-deriving it from chat. See `sessions/README.md`.
 | 10 | Ask for 2–3 thumbnails → analysis → stop | Packaging |
 | 11 | Generate 5 thumbnails | Packaging |
 | 12 | Ask: export to Word? (optional) → finish | Export |
+| 13 | Generate voiceover from the final script (TTS; match source narrator voice/pacing; `docs/stage13-voice.md`) → stop | Voice |
 
 When the operator sends their first message, begin with **STATE 1**.
 

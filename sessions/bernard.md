@@ -473,3 +473,11 @@ You die in a small room that is not your home, because you never had a home, onl
 
 - Requested? (y/n):
 - Document path:
+
+## STATE 13 — Voice Generation — `pending`
+*(Voice Cell — see docs/stage13-voice.md)*
+
+- Voice profile (narrator register / pacing): calm, measured, deadpan **male** narrator; flat affect underplaying grim content; steady cadence ≈2.25–2.3 wps (~135–138 wpm), short pauses at paragraph breaks. Match Bernard's delivery style, not a real person's identity.
+- Backend used:
+- Audio path(s):
+- Duration:

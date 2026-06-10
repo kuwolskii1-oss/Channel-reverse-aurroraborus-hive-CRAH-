@@ -106,3 +106,11 @@
 
 - Requested? (y/n):
 - Document path:
+
+## STATE 13 — Voice Generation — `pending`
+*(Voice Cell — see docs/stage13-voice.md)*
+
+- Voice profile (narrator register / pacing):
+- Backend used:
+- Audio path(s):
+- Duration:
