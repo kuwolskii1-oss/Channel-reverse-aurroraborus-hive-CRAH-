@@ -114,3 +114,11 @@
 - Backend used:
 - Audio path(s):
 - Duration:
+
+## STATE 14 — Media Render — `pending`
+*(Render Cell — Higgsfield; see docs/stage14-render.md)*
+
+- Venue (operator Claude+MCP / GitHub Actions+API):
+- Style-anchor reference:
+- Pilot result (beats 1–10):
+- Full-run manifest (beat → image → clip):

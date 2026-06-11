@@ -482,3 +482,14 @@ You die in a small room that is not your home, because you never had a home, onl
 - Audio path(s): GitHub Actions artifact **`narration-mp3`** on run #1 — https://github.com/kuwolskii1-oss/Channel-reverse-aurroraborus-hive-CRAH-/actions/runs/27309835914 (artifact id 7549752071, sha256 efe065c0…, expires 2026-09-08). 19.1 MB mp3 zipped; source text `voice/eunuch-script.txt` (3,165 words / 16,580 chars, 10 chunks).
 - Duration: ~22–23 min expected at the Style-DNA pace (19.1 MB mp3 is consistent with this at ~128 kbps).
 - Note: the CRAH sandbox cannot download the artifact binary (Azure blob host firewalled) — operator downloads it from the run page in one click.
+
+## STATE 14 — Media Render — `pending`
+*(Render Cell — Higgsfield; see docs/stage14-render.md)*
+
+- Venue: **operator's Claude + Higgsfield MCP** (`https://mcp.higgsfield.ai/mcp`, OAuth). Sandbox firewalls all Higgsfield hosts, so generation runs operator-side.
+- Scope: **pilot beats 1–10 first** (style/character lock + sign-off), then scale to all 241.
+- Pilot pack: `sessions/render-pilot-bernard.md` (paste-ready Render Cell brief + 10 beats + manifest).
+- Models: Soul (images) + image-to-video (Kling/Hailuo, minimal motion).
+- Style-anchor reference: _pending (operator generates anchor image first)_
+- Pilot result (beats 1–10): _pending_
+- Full-run manifest (beat → image → clip): _pending_

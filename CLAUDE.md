@@ -13,11 +13,11 @@ advances the flow.
 
 ```
                           👑 QUEEN  (state machine + routing)
-   ┌────────┬────────┬──────────┬────────┬──────────┬───────────┬────────┬───────┐
-   │ Recon  │ Brand  │ Strategy │ Script │ Visual   │ Packaging │ Export │ Voice │
-   │ Cell   │ Cell   │ Cell     │ Cell   │ Cell     │ Cell      │ Cell   │ Cell  │
-   │ S1,S3  │ S2     │ S4, S5   │ S6     │ S7,S8,S9 │ S10, S11  │ S12    │ S13   │
-   └────────┴────────┴──────────┴────────┴──────────┴───────────┴────────┴───────┘
+   ┌────────┬────────┬──────────┬────────┬──────────┬───────────┬────────┬───────┬────────┐
+   │ Recon  │ Brand  │ Strategy │ Script │ Visual   │ Packaging │ Export │ Voice │ Render │
+   │ Cell   │ Cell   │ Cell     │ Cell   │ Cell     │ Cell      │ Cell   │ Cell  │ Cell   │
+   │ S1,S3  │ S2     │ S4, S5   │ S6     │ S7,S8,S9 │ S10, S11  │ S12    │ S13   │ S14    │
+   └────────┴────────┴──────────┴────────┴──────────┴───────────┴────────┴───────┴────────┘
 ```
 
 | Cell | States | Responsibility |
@@ -30,6 +30,7 @@ advances the flow.
 | Packaging | 10, 11 | Thumbnail analysis + 5 thumbnails |
 | Export | 12 | Word-document export |
 | Voice | 13 | Voiceover / TTS narration of the final script (`docs/stage13-voice.md`) |
+| Render | 14 | Media generation from the prompts via Higgsfield — images (Soul) + motion clips (`docs/stage14-render.md`) |
 
 ## Global rules (apply to every cell, always)
 
@@ -48,7 +49,7 @@ advances the flow.
 ## Session record (shared memory)
 
 Each cloning run has one file, `sessions/<slug>.md`, created by the Recon Cell at
-STATE 1 from `sessions/_TEMPLATE.md`. It holds everything gathered across all 13
+STATE 1 from `sessions/_TEMPLATE.md`. It holds everything gathered across all 14
 states. Every cell reads context from it and appends its own section, flipping
 that section `pending` → `✓ done`. This is how the hive scales: new agents read
 shared context instead of re-deriving it from chat. See `sessions/README.md`.
@@ -70,6 +71,7 @@ shared context instead of re-deriving it from chat. See `sessions/README.md`.
 | 11 | Generate 5 thumbnails | Packaging |
 | 12 | Ask: export to Word? (optional) → finish | Export |
 | 13 | Generate voiceover from the final script (TTS; match source narrator voice/pacing; `docs/stage13-voice.md`) → stop | Voice |
+| 14 | Generate media from the STATE 8/9 prompts via Higgsfield (Soul images + image-to-video motion); runs where the Higgsfield MCP/API is reachable; pilot ~10 beats → sign-off → scale to all beats; record manifest (`docs/stage14-render.md`) → stop | Render |
 
 When the operator sends their first message, begin with **STATE 1**.
 
